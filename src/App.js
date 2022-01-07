@@ -7,6 +7,10 @@ import TestProps2 from "./Day-1/props2";
 import TestProps from "./Day-1/props1";
 import Wrapper from "./Day-1/Wrapper";
 import Counter from "./Day-1/Counter";
+import InputSample from "./Day-2/InputSample";
+import MultiInputSample from "./Day-2/MultiInputSample";
+import UseRefSample from "./Day-2/useRefSample";
+import UserList from "./Day-2/UserList";
 
 function App() {
     const name = "Hyunsul Kim";
@@ -29,6 +33,10 @@ function App() {
           <div style={style}>{name}</div>
           <div className="gray-box"/>
           <Counter/>
+          <InputSample/>
+          <MultiInputSample/>
+          <UseRefSample/>
+          <UserList/>
       </Wrapper>
 
   );
