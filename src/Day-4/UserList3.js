@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useEffect } from 'react';
 
-function User({ user, onRemove,onToggle }) {
+function User({ user, onRemove, onToggle }) {
+    // useEffect(() => {
+    //     console.log(user);
+    // });
+    useEffect(() => {
+        console.log(`user${user.id} 값이 설정됨`);
+        console.log(user);
+        return () => {
+            console.log(`user${user.id} 가 바뀌기 전..`);
+            console.log(user);
+        };
+    }, [user]);
     return (
         <div>
             <b
@@ -9,19 +20,17 @@ function User({ user, onRemove,onToggle }) {
                     color: user.active ? 'green' : 'black'
                 }}
                 onClick={() => onToggle(user.id)}
-
             >
                 {user.username}
             </b>
-
+            &nbsp;
             <span>({user.email})</span>
             <button onClick={() => onRemove(user.id)}>삭제</button>
         </div>
     );
 }
 
-
-function UserList2({testusers, onRemove , onToggle}) {
+function UserList({ testusers, onRemove, onToggle }) {
     return (
         <div>
             {testusers.map(user => (
@@ -35,4 +44,5 @@ function UserList2({testusers, onRemove , onToggle}) {
         </div>
     );
 }
-export default UserList2;
+
+export default UserList;
