@@ -45,4 +45,4 @@ function UserList({ testusers, onRemove, onToggle }) {
     );
 }
 
-export default UserList;
+export default React.memo(UserList);

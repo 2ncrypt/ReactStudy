@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Header from "./Day-1/Header";
-import Hello from "./Day-1/hello";
+import Header from "./1st/Header";
+import Hello from "./1st/hello";
 
-import TestProps2 from "./Day-1/props2";
-import TestProps from "./Day-1/props1";
-import Wrapper from "./Day-1/Wrapper";
-import Counter from "./Day-1/Counter";
-import InputSample from "./Day-2/InputSample";
-import MultiInputSample from "./Day-2/MultiInputSample";
-import UseRefSample from "./Day-2/useRefSample";
-import UserList from "./Day-2/UserList";
+import TestProps2 from "./1st/props2";
+import TestProps from "./1st/props1";
+import Wrapper from "./1st/Wrapper";
+import Counter from "./1st/Counter";
+import InputSample from "./2st/InputSample";
+import MultiInputSample from "./2st/MultiInputSample";
+import UseRefSample from "./2st/useRefSample";
+import UserList from "./2st/UserList";
 
 function AppDay12() {
     const name = "Hyunsul Kim";

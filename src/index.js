@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import CounterUseReducer from "./5st/Counter(useReducer)";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <CounterUseReducer/>
   </React.StrictMode>,
   document.getElementById('root')
 );

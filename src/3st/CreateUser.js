@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CreateUser({username, email ,onChange, onCreate}) {
+const CreateUser = ({username, email ,onChange, onCreate}) => {
     return (
         <div>
             <input
@@ -18,4 +18,6 @@ export default function CreateUser({username, email ,onChange, onCreate}) {
             <button onClick={onCreate}>Submit</button>
         </div>
     );
-}
+};
+//컴포넌트의 props가 바뀌지 않으면 리렌더링을 방지 React.mmo
+export default React.memo(CreateUser);
