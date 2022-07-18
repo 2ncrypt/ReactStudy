@@ -2,7 +2,9 @@ import React, {useCallback, useMemo, useRef, useState} from 'react';
 import UserList from './5st/UserList4';
 import CreateUser from './3st/CreateUser';
 import EventPractice from './6st/eventPractice'
-
+import Counter from './7st/Counter'
+import Info from './7st/Info'
+import Average from './7st/Average'
 function countActiveUsers(users) {
     console.log('활성 사용자 수를 세는중...');
     return users.filter(user => user.active).length;
@@ -82,15 +84,18 @@ function App() {
     return (
         <>
 
-            <CreateUser
-                username={username}
-                email={email}
-                onChange={onChange}
-                onCreate={onCreate}
-            />
-            <UserList users={users} onRemove={onRemove} onToggle={onToggle} />
-            <div>활성사용자 수 : {count}</div>
-            <EventPractice/>
+            {/*<CreateUser*/}
+            {/*    username={username}*/}
+            {/*    email={email}*/}
+            {/*    onChange={onChange}*/}
+            {/*    onCreate={onCreate}*/}
+            {/*/>*/}
+            {/*<UserList users={users} onRemove={onRemove} onToggle={onToggle} />*/}
+            {/*<div>활성사용자 수 : {count}</div>*/}
+            {/*<EventPractice/>*/}
+            <Counter/>
+            <Info/>
+            <Average/>
         </>
     );
 }
